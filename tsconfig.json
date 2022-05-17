@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "esnext", // which EcmaScript version should tsc follow when transpiles your files,
+    "module": "commonjs", // Will compile to this https://www.typescriptlang.org/tsconfig#module
+    "lib": ["esnext"], // Standard API (DOM if you were running in browser)
+    "strict": true, // turn on next flags, recommend to turn it on for better code quality:
+    "outDir": "dist", // Name of the directory output
+    "sourceMap": true, // enables generation of source maps - files allow debuggers and other tools to analyze your code
+    "moduleResolution": "node",
+    "esModuleInterop": true, // recommended: true, create helpers (__importDefault and etc) to parse CommonJS/AMD/UMD modules correct and follow specs, enables allowSyntheticDefaultImports
+    "resolveJsonModule": true // include json files by default in your project as a module
+  },
+  "include": ["api/**/*"],
+  "exclude": ["node_modules"]
+}
